@@ -596,3 +596,56 @@ a:focus-visible {
   background-color: #111827;
   border-radius: 8px;
 }
+
+
+/* ===============================
+   17. Каталог на JavaScript
+   =============================== */
+
+.catalog-controls {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.catalog-controls__group {
+  display: grid;
+  gap: var(--space-xs);
+}
+
+.catalog-controls__input,
+.catalog-controls__select {
+  width: 100%;
+  min-height: 44px;
+  padding: 8px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font: inherit;
+}
+
+.product-card__image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+}
+
+.product-card__status {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+
+/* ===============================
+   18. Сообщения формы
+   =============================== */
+
+.form-error {
+  margin: 0;
+  color: var(--color-danger);
+}
+
+.form-message {
+  margin: var(--space-md) 0 0;
+  font-weight: 700;
+}
