@@ -7,6 +7,7 @@
   <title>Оформление заявки — Учебный интернет-магазин</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <script src="js/validation.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Перейти к основному содержимому</a>
@@ -53,7 +54,7 @@
       <h1>Оформление заявки</h1>
       <p>Заполните форму, чтобы оставить заявку на товар.</p>
 
-      <form class="order-form" action="#" method="post">
+      <form class="order-form" action="#" method="post" novalidate>
         <div class="order-form__field">
           <label class="order-form__label" for="order-name">Имя</label>
           <input
@@ -66,6 +67,7 @@
             autocomplete="given-name"
             required
           >
+          <p class="form-error" id="order-name-error"></p>
         </div>
 
         <div class="order-form__field">
@@ -79,6 +81,7 @@
             autocomplete="email"
             required
           >
+          <p class="form-error" id="order-email-error"></p>
         </div>
 
         <div class="order-form__field">
@@ -93,6 +96,7 @@
             pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$"
             required
           >
+          <p class="form-error" id="order-phone-error"></p>
           <small>Формат: +7 (900) 000-00-00</small>
         </div>
 
@@ -135,6 +139,8 @@
             Отправить заявку
           </button>
         </div>
+
+        <p class="form-message" aria-live="polite"></p>
       </form>
     </section>
   </main>
