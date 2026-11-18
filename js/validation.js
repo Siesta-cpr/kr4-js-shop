@@ -9,6 +9,12 @@ if (orderForm) {
   const emailError = orderForm.querySelector('#order-email-error');
   const phoneError = orderForm.querySelector('#order-phone-error');
 
+  const productSelect = orderForm.querySelector('#order-product');
+  const requestedProduct = 'product-' + new URLSearchParams(window.location.search).get('product');
+  if (Array.from(productSelect.options).some((option) => option.value === requestedProduct)) {
+    productSelect.value = requestedProduct;
+  }
+
   const formMessage = orderForm.querySelector('.form-message');
 
   function showError(input, errorElement, message) {

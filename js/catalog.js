@@ -80,7 +80,10 @@ function createProductCard(product) {
 
   const title = document.createElement('h3');
   title.classList.add('product-card__title');
-  title.textContent = product.title;
+  const detailsLink = document.createElement('a');
+  detailsLink.href = `product.html?id=${product.id}`;
+  detailsLink.textContent = product.title;
+  title.append(detailsLink);
 
   const description = document.createElement('p');
   description.classList.add('product-card__description');
@@ -92,10 +95,11 @@ function createProductCard(product) {
 
   const status = document.createElement('p');
   status.classList.add('product-card__status');
+  status.classList.toggle('product-card__status--available', product.isAvailable);
   status.textContent = product.isAvailable ? 'В наличии' : 'Нет в наличии';
 
   const button = document.createElement('button');
-  button.classList.add('product-card__button');
+  button.classList.add('button', 'button--primary', 'product-card__button');
   button.type = 'button';
   button.textContent = 'В корзину';
   button.dataset.action = 'add-to-cart';

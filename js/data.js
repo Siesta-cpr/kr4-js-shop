@@ -7,8 +7,9 @@ const products = [
     discountPercent: 10,
     rating: 4.7,
     isAvailable: true,
-    image: 'images/product-1.svg',
-    description: 'Кофемашина для приготовления эспрессо и капучино дома.'
+    image: 'images/product-1-photo.jpg',
+    description: 'Кофемашина для приготовления эспрессо и капучино дома.',
+    details: 'Barista Home подойдёт для тех, кто готовит кофе дома. На ней можно сделать порцию эспрессо или приготовить капучино с молочной пенкой.'
   },
   {
     id: 2,
@@ -18,8 +19,9 @@ const products = [
     discountPercent: 0,
     rating: 4.5,
     isAvailable: true,
-    image: 'images/product-2.svg',
-    description: 'Чайник с быстрым нагревом и автоматическим отключением.'
+    image: 'images/product-2-photo.jpg',
+    description: 'Чайник с быстрым нагревом и автоматическим отключением.',
+    details: 'SmartHeat быстро нагревает воду для чая, кофе и других горячих напитков. После закипания чайник автоматически отключается.'
   },
   {
     id: 3,
@@ -29,8 +31,9 @@ const products = [
     discountPercent: 15,
     rating: 4.8,
     isAvailable: false,
-    image: 'images/product-3.svg',
-    description: 'Робот-пылесос для ежедневной уборки квартиры.'
+    image: 'images/product-3-photo.jpg',
+    description: 'Робот-пылесос для ежедневной уборки квартиры.',
+    details: 'CleanBot помогает поддерживать чистоту между основными уборками. Он собирает пыль и мелкий мусор с пола в жилых комнатах.'
   },
   {
     id: 4,
@@ -40,8 +43,9 @@ const products = [
     discountPercent: 5,
     rating: 4.4,
     isAvailable: true,
-    image: 'images/product-4.svg',
-    description: 'Лампа с регулировкой яркости и температуры света.'
+    image: 'images/product-4-photo.jpg',
+    description: 'Лампа с регулировкой яркости и температуры света.',
+    details: 'LightSpace позволяет менять яркость и цветовую температуру. Для работы можно выбрать более яркий свет, а для отдыха вечером — приглушённый тёплый.'
   },
   {
     id: 5,
@@ -51,8 +55,9 @@ const products = [
     discountPercent: 10,
     rating: 4.6,
     isAvailable: true,
-    image: 'images/product-5.svg',
-    description: 'Беспроводные наушники с шумоподавлением.'
+    image: 'images/product-5-photo.jpg',
+    description: 'Беспроводные наушники с шумоподавлением.',
+    details: 'SoundPro подключаются без проводов и подходят для музыки и подкастов дома или в дороге. Шумоподавление помогает приглушить окружающие звуки.'
   },
   {
     id: 6,
@@ -62,7 +67,8 @@ const products = [
     discountPercent: 0,
     rating: 4.3,
     isAvailable: false,
-    image: 'images/product-6.svg',
-    description: 'Компактная колонка для дома и поездок.'
+    image: 'images/product-6-photo.jpg',
+    description: 'Компактная колонка для дома и поездок.',
+    details: 'BassBox удобно брать с собой благодаря компактному корпусу. Колонка подойдёт для прослушивания музыки дома, на даче или в поездке.'
   }
 ];
